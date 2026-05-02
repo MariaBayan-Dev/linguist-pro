@@ -13,44 +13,33 @@ let esInglesAEspanol = true
 //FUNCIÓN ASINCRONA PARA INTEGRAR API IA
 
 async function traducir(texto) {
-  resultado.textContent = "Traduciendo..." // Se avisa al usuario
-  try {
-    const respuesta = await fetch(
-      "https://api.groq.com/openai/v1/chat/completions",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          // Authorization es el header estándar
-          "Authorization": "Bearer TU_API_KEY_DE_GROQ"
-        },
-        body: JSON.stringify({
-          model: "llama-3.3-70b-versatile", // modelo gratuito de Groq
-          max_tokens: 1000,
-          messages: [
-            {
-              role: "user",
-              content: `Traduce este texto si ${esInglesAEspanol ? "al español" : "al inglés"}. Responde SOLO con la traducción, sin explicaciones ni texto extra: ${texto}`
-            }
-          ]
+    resultado.textContent = "Traduciendo..."
+    try {
+        // Ahora llamamos a nuestra propia función serverless
+        // en lugar de a Groq directamente
+        const respuesta = await fetch("/api/translate", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            // Le mandamos el texto y el idioma de destino
+            body: JSON.stringify({
+                texto: texto,
+                idioma: esInglesAEspanol ? "al español" : "al inglés"
+            })
         })
-      }
-    )
 
-    const datos = await respuesta.json()
-    console.log("Status:", respuesta.status)
-    console.log("Datos:", datos)
+        const datos = await respuesta.json()
 
-    if(respuesta.ok) {
-      // En Groq el texto está en choices[0].message.content, como apunte
-      resultado.textContent = datos.choices[0].message.content
-    } else {
-      console.log("Error de la API:", datos.error.message)
+        if(respuesta.ok) {
+            resultado.textContent = datos.traduccion
+        } else {
+            console.log("Error:", datos.error)
+        }
+
+    } catch(error) {
+        console.log("Error:", error)
     }
-
-  } catch (error) {
-    console.log("Error:", error)
-  }
 }
 
 
