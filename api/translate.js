@@ -1,6 +1,6 @@
 // Este archivo vive en el servidor de Vercel, no en el navegador
 // Por eso puede leer las variables de entorno de forma segura
-export default async function handler(request, response) {
+module.exports = async function handler(request, response) {
     
     // Leemos la API key de las variables de entorno de Vercel
     const apiKey = process.env.GROQ_API_KEY
