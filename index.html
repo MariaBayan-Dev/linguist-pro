@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor Linguist Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+</head>
+<body>
+
+<!--------WEB TRADUCTOR--------->
+  <div class="layout">
+    <header class="header__layout">
+      <div class="header__container">
+        <span class="header__logo">Linguist Pro</span>
+        <p class="header__text">Sistema de traducción global</p>
+      </div>
+
+      <div class="header__titles">
+        <h1 class="header__title">Traductor universal</h1>
+        <p class="header__subtitle">Traducir texto de inglés a español o viceversa.</p>
+      </div>
+    </header>
+
+    <main class="main__layout">
+      <section class="section__lenguage">
+        <p class="lenguage__change">Inglés</p>
+        <button class="lenguage__button" id="lenguage__button">
+            <svg class="lenguage__icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9 2 12t.788-3.9 2.137-3.175T8.1 2.788 12 2t3.9.788 3.175 2.137T21.213 8.1 22 12t-.788 3.9-2.137 3.175-3.175 2.138T12 22m-2.5-6 1.4-1.4L9.3 13h5.4l-1.6 1.6 1.4 1.4 4-4-4-4-1.4 1.4 1.6 1.6H9.3l1.6-1.6L9.5 8l-4 4z"/></svg>
+        </button>
+        <p class="lenguage__change">Español</p>
+      </section>
+
+      <div class="translate__container">
+
+        <div class="translate__box">
+          <div class="translate__header">
+            <h2 class="translate__title-source">Texto original</h2>
+            <button class="translate__button-close" id="translate__button-close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M6.4 19 5 17.6l5.6-5.6L5 6.4 6.4 5l5.6 5.6L17.6 5 19 6.4 13.4 12l5.6 5.6-1.4 1.4-5.6-5.6z"/></svg>
+              <span class="translate__tooltip">Borrar</span>
+            </button>
+          </div>
+          <textarea class="translate__textarea" id="translate__textarea" placeholder="Añade tu texto"></textarea>
+          <span class="translate__counter" id="translate__counter">0/500</span>
+          <p class="translate__tip">
+            <svg class="translate__icon-tip" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path fill="currentColor" d="M7 20h4c0 1.1-.9 2-2 2s-2-.9-2-2m-2-1h8v-2H5zm11.5-9.5c0 3.82-2.66 5.86-3.77 6.5H5.27c-1.11-.64-3.77-2.68-3.77-6.5C1.5 5.36 4.86 2 9 2s7.5 3.36 7.5 7.5m4.87-2.13L20 8l1.37.63L22 10l.63-1.37L24 8l-1.37-.63L22 6zM19 6l.94-2.06L22 3l-2.06-.94L19 0l-.94 2.06L16 3l2.06.94z"/></svg>
+            Para un mejor resultado, pega el texto directamente
+          </p>
+        </div>
+
+        <div class="translate__box">
+          <div class="translate__header">
+              <h2 class="translate__title-translation">Traducción</h2>
+              <button class="translate__button-copy" id="translate__button-copy">
+                <svg class="translate__copy" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M9 18q-.825 0-1.412-.587T7 16V4q0-.825.588-1.412T9 2h9q.825 0 1.413.588T20 4v12q0 .825-.587 1.413T18 18zm-4 4q-.825 0-1.412-.587T3 20V6h2v14h11v2z"/></svg>
+                <span class="translate__copy-text">Copiar</span>
+              </button>
+          </div>
+          <p class="translate__text" id="translate__text"></p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="footer__layout">
+    <small class="footer__copy">Todos los derechos reservados &copy; 2026. Proyecto hecho por <a class="footer__link" href="#">María Bayán Escobar</a></small>
+  </footer>  
+
+  <!--------JAVASCRIPT--------->
+    <script src="main.js"></script>
+</body>
+</html>
