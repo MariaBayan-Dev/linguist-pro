@@ -29,3 +29,5 @@ module.exports = async function handler(request, response) {
     })
     // Ya no hay "export default", usamos "module.exports" arriba
 }
+
+//hola
