@@ -13,7 +13,6 @@ let esInglesAEspanol = true
 //FUNCIÓN ASINCRONA PARA INTEGRAR API IA
 
 async function traducir(texto) {
-    resultado.textContent = datos.traduccion
     try {
         // Ahora llamamos a nuestra propia función serverless
         // en lugar de a Groq directamente
