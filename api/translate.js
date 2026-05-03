@@ -1,8 +1,12 @@
+//CODIGO PARA VERCEL Y PROTECCIÓN API
+
+//Apuntes a futuro
+
 module.exports = async function handler(request, response) {
     try {
         const apiKey = process.env.GROQ_API_KEY
         
-        // Leemos el body de forma más compatible con Vercel
+        // Se lee el body para mas compatibilidad con Vercel
         const { texto, idioma } = request.body
         
         const respuesta = await fetch("https://api.groq.com/openai/v1/chat/completions", {
@@ -30,8 +34,12 @@ module.exports = async function handler(request, response) {
         })
         
     } catch(error) {
-        // Si algo falla, devolvemos el error en formato JSON
-        // para que el navegador pueda leerlo correctamente
+    /*
+
+    Si algo falla, se devuelve el error en formato JSON
+    asi el navegador puede leerlo más fácilmente
+
+    */
         return response.status(500).json({
             error: error.message
         })

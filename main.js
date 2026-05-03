@@ -14,14 +14,14 @@ let esInglesAEspanol = true
 
 async function traducir(texto) {
     try {
-        // Ahora llamamos a nuestra propia función serverless
+        // Se llama a la función propia serverless
         // en lugar de a Groq directamente
         const respuesta = await fetch("/api/translate", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            // Le mandamos el texto y el idioma de destino
+            // Se mandamos el texto y el idioma de destino
             body: JSON.stringify({
                 texto: texto,
                 idioma: esInglesAEspanol ? "al español" : "al inglés"
