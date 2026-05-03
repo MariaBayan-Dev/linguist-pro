@@ -15,7 +15,7 @@
     --color-hover: #1742a0;
     --shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     --color-icon: #8f9fb5;
-    --color-icon-tip: #eeea14;
+    --color-warning: #F59E0B;
 }
 
 
@@ -126,6 +126,12 @@ body{
     display: block;
     margin: 0.80rem;
     color: var(--color-primary);
+    transition: transform;
+}
+
+.lenguage__icon:hover{
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
 }
 
 .translate__container{
@@ -156,6 +162,21 @@ body{
     align-items: center;
     border-bottom: 1px solid var(--color-border);
     padding-bottom: 1rem;
+}
+
+.translate__header-actions{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.translate__ai-badge{
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
 }
 
 .translate__button-close{
@@ -242,7 +263,7 @@ body{
 }
 
 .translate__icon-tip{
-    color: var(--color-icon-tip);
+    color: var(--color-warning);
 }
 
 .translate__text{
