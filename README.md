@@ -16,4 +16,6 @@ English to Spanish translation web application powered by artificial intelligenc
 
 ## 📸 Preview
 
-<img width="1887" height="912" alt="ezgif-18a9d3340a94f46d" />
+https://github.com/user-attachments/assets/f9c68cbc-5a01-445b-b77a-e518fa33302e
+
+
