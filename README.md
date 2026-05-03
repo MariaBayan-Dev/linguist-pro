@@ -13,9 +13,12 @@ English to Spanish translation web application powered by artificial intelligenc
 
 
 ## 🔗 Live Demo
+👉 [Linguist Pro](https://linguist-pro-kohl.vercel.app/)
 
 ## 📸 Preview
 
-https://github.com/user-attachments/assets/f9c68cbc-5a01-445b-b77a-e518fa33302e
+<p align="center">
+  <img width="1887" height="912" alt="ezgif-18a9d3340a94f46d" src="https://github.com/user-attachments/assets/6021c652-6546-46f0-83b2-1167ed12bf07" />
+</p>
 
 
