@@ -21,7 +21,7 @@ async function traducir(texto) {
             headers: {
                 "Content-Type": "application/json"
             },
-            // Se mandamos el texto y el idioma de destino
+            // Se manda el texto y el idioma de destino
             body: JSON.stringify({
                 texto: texto,
                 idioma: esInglesAEspanol ? "al español" : "al inglés"
