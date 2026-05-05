@@ -365,6 +365,7 @@ body{
 @media (max-width: 480px){
     .translate__container{
         flex-direction: column;
+        align-items: stretch;
     }
 
     .lenguage__change{
@@ -428,13 +429,16 @@ body{
 
     .footer__copy{
         font-size: 1.2rem;
-        text-align: center;
     }
 
-    /*SALTO DE LINEA sin usar br*/
+    /*SALTO DE LINEA*/
 
-    .footer__line-break::after{
+    .footer__line-break::after {
         content: "\A";
+    }
+
+    .footer__copy {
         white-space: pre;
     }
+
 }
