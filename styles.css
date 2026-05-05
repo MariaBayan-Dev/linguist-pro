@@ -373,8 +373,8 @@ body{
     }
 
     .lenguage__icon{
-        width: 30;
-        height: 30;
+        width: 30px;
+        height: 30px;
     }
 
     .translate__title-source{
@@ -382,7 +382,7 @@ body{
     }
 
     .translate__textarea{
-        font-size: 13px;
+        font-size: 1.3rem;
     }
 
     .translate__counter{
@@ -391,5 +391,50 @@ body{
 
     .translate__tip{
         font-size: 1rem;
+    }
+
+    .translate__box{
+        min-height: 25rem;
+        padding: 1.5rem;
+        margin: 1rem;
+        height: auto;
+    }
+
+    .translate__header-actions{
+        gap: 0.5rem;
+    }
+
+    .translate__title-translation{
+        font-size: 1.2rem;
+    }
+
+    .translate__ai-badge{
+        font-size: 0.80rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .translate__copy{
+        width: 17px;
+        height: 17px;
+    }
+
+    .translate__copy-text{
+        font-size: 1.2rem;
+    }
+
+    .translate__text{
+        font-size: 1.2rem;
+    }
+
+    .footer__copy{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    /*SALTO DE LINEA sin usar br*/
+
+    .footer__line-break::after{
+        content: "\A";
+        white-space: pre;
     }
 }
