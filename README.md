@@ -35,22 +35,19 @@ English to Spanish translation web application powered by artificial intelligenc
 
 ## 📸 Preview
 
-<img width="1887" height="912" alt="ezgif-18a9d3340a94f46d" src="https://github.com/user-attachments/assets/6021c652-6546-46f0-83b2-1167ed12bf07" />
-
+![App Preview](./img/preview-linguist-pro.gif)
 
 ## 🖥️ Local Setup
 
-**Option A - Deploy on Vercel (recommended):**
-1. Fork this repository
-2. Import it on [vercel.com](https://vercel.com)
-3. Add your Groq API key as an environment variable named `GROQ_API_KEY`
-4. Deploy — Vercel handles the rest
+### Option 1 – Deploy (recommended)
+- Fork the repository
+- Import it into [vercel.com](https://vercel.com)
+- Add your `GROQ_API_KEY` as an environment variable
+- Deploy
 
-**Option B - Run locally with Live Server:**
-1. Clone this repository
-2. Get a free API key at [console.groq.com](https://console.groq.com)
-3. In `main.js`, replace the `/api/translate` fetch with a direct call 
-   to Groq and add your API key (see comments in the code)
-4. Open `index.html` with Live Server
+### Option 2 – Run locally
+- Clone the repository
+- Add your API key in [console.groq.com](https://console.groq.com) (it's free)
+- Run the project using Live Server
 
 > ⚠️ Never commit your API key to a public repository
