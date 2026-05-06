@@ -16,13 +16,15 @@ English to Spanish translation web application powered by artificial intelligenc
 - Spanish to English exchange
 - Translator with integrated AI Groq API
 
+## 📚 What I learned
+- Working with APIs  
+- Building layouts with HTML and CSS
+
 ## 🔗 Live Demo
 👉 [Linguist Pro](https://linguist-pro-kohl.vercel.app/)
 
 ## 📸 Preview
+<img width="1887" height="912" alt="ezgif-18a9d3340a94f46d" src="https://github.com/user-attachments/assets/6021c652-6546-46f0-83b2-1167ed12bf07" />
 
-<p align="center">
-  <img width="1887" height="912" alt="ezgif-18a9d3340a94f46d" src="https://github.com/user-attachments/assets/6021c652-6546-46f0-83b2-1167ed12bf07" />
-</p>
 
 
