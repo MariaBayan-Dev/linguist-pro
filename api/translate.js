@@ -1,6 +1,6 @@
 //CODIGO PARA VERCEL Y PROTECCIÓN API
 
-//Apuntes a futuro
+//Apuntes
 
 module.exports = async function handler(request, response) {
     try {

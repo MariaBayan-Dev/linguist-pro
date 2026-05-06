@@ -10,6 +10,7 @@ const contador = document.querySelector('#translate__counter')
 //VARIBLE PARA CAMBIO IDIOMA
 let esInglesAEspanol = true
 
+
 //FUNCIÓN ASINCRONA PARA INTEGRAR API IA
 
 async function traducir(texto) {
