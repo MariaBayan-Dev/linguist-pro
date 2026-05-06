@@ -10,7 +10,11 @@ English to Spanish translation web application powered by artificial intelligenc
 ![API](https://img.shields.io/badge/API-grey)
 ![Static Badge](https://img.shields.io/badge/IA-1572B6)
 
-
+## 🚀 Features
+- Easy-to-use translator similar to Google Translate
+- Minimalist interface
+- Spanish to English exchange
+- Translator with integrated AI Groq API
 
 ## 🔗 Live Demo
 👉 [Linguist Pro](https://linguist-pro-kohl.vercel.app/)
