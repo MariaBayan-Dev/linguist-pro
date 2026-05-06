@@ -14,7 +14,7 @@ English to Spanish translation web application powered by artificial intelligenc
 
 - Easy-to-use translator similar to Google Translate
 - Minimalist interface
-- Spanish to English exchange
+- Bidirectional translation with one-click language swap
 - Translator with integrated AI Groq API
 
 ## 📚 What I learned
@@ -25,9 +25,10 @@ English to Spanish translation web application powered by artificial intelligenc
 - How to deploy a frontend project with environment variables on Vercel
 
 ## 💡 Future improvements
-- Add search functionality  
-- Add favorites system  
-- Improve UI and visual design
+- Support for more languages
+- Dark mode UI
+- Automatic source language detection
+- Translation history
 
 ## 🔗 Live Demo
 
@@ -40,14 +41,17 @@ English to Spanish translation web application powered by artificial intelligenc
 ## 🖥️ Local Setup
 
 ### Option 1 – Deploy (recommended)
-- Fork the repository
-- Import it into [vercel.com](https://vercel.com)
-- Add your `GROQ_API_KEY` as an environment variable
-- Deploy
+1. Fork the repository
+2. Import it into [vercel.com](https://vercel.com)
+3. Add your `GROQ_API_KEY` as an environment variable
+4. Deploy
 
 ### Option 2 – Run locally
-- Clone the repository
-- Add your API key in [console.groq.com](https://console.groq.com) (it's free)
-- Run the project using Live Server
+1. Clone the repository
+2. Get a free API key at [console.groq.com](https://console.groq.com/keys)
+3. In `main.js`, replace the `/api/translate` fetch with a 
+   direct call to the Groq API and paste your key in the 
+   Authorization header
+4. Open `index.html` with Live Server
 
 > ⚠️ Never commit your API key to a public repository
