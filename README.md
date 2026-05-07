@@ -14,7 +14,7 @@ English to Spanish translation web application powered by artificial intelligenc
 
 - Easy-to-use translator similar to Google Translate
 - Minimalist interface
-- Spanish to English exchange
+- Bidirectional translation with one-click language swap
 - Translator with integrated AI Groq API
 
 ## 📚 What I learned
@@ -25,9 +25,10 @@ English to Spanish translation web application powered by artificial intelligenc
 - How to deploy a frontend project with environment variables on Vercel
 
 ## 💡 Future improvements
-- Add search functionality  
-- Add favorites system  
-- Improve UI and visual design
+- Support for more languages
+- Dark mode UI
+- Automatic source language detection
+- Translation history
 
 ## 🔗 Live Demo
 
@@ -35,22 +36,22 @@ English to Spanish translation web application powered by artificial intelligenc
 
 ## 📸 Preview
 
-<img width="1887" height="912" alt="ezgif-18a9d3340a94f46d" src="https://github.com/user-attachments/assets/6021c652-6546-46f0-83b2-1167ed12bf07" />
-
+![App Preview](./img/preview-linguist-pro.gif)
 
 ## 🖥️ Local Setup
 
-**Option A - Deploy on Vercel (recommended):**
-1. Fork this repository
-2. Import it on [vercel.com](https://vercel.com)
-3. Add your Groq API key as an environment variable named `GROQ_API_KEY`
-4. Deploy — Vercel handles the rest
+### Option 1 – Deploy (recommended)
+1. Fork the repository
+2. Import it into [vercel.com](https://vercel.com)
+3. Add your `GROQ_API_KEY` as an environment variable
+4. Deploy
 
-**Option B - Run locally with Live Server:**
-1. Clone this repository
-2. Get a free API key at [console.groq.com](https://console.groq.com)
-3. In `main.js`, replace the `/api/translate` fetch with a direct call 
-   to Groq and add your API key (see comments in the code)
+### Option 2 – Run locally
+1. Clone the repository
+2. Get a free API key at [console.groq.com](https://console.groq.com/keys)
+3. In `main.js`, replace the `/api/translate` fetch with a 
+   direct call to the Groq API and paste your key in the 
+   Authorization header
 4. Open `index.html` with Live Server
 
 > ⚠️ Never commit your API key to a public repository
