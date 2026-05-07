@@ -10,6 +10,7 @@
     --color-background: #F8FAFC;
     --color-button: #eff6ff;
     --color-card: #ffffff;
+    --color-card-traduction: #f0f4f9;    
     --color-neutral: #0F172A;
     --color-border: #e7ecf2;
     --color-hover: #1742a0;
@@ -186,6 +187,21 @@ body{
     border-radius: 20px;
     box-shadow: var(--shadow);
 }
+
+.translate__box-traduction{
+    display: flex;
+    flex-direction: column;
+    min-height: 39rem;
+    height: 39rem;
+    flex: 1;
+    padding: 2.5rem;
+    background-color: var(--color-card-traduction);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+
 
 .translate__header{
     display: flex;
