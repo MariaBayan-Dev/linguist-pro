@@ -24,19 +24,12 @@ English to Spanish translation web application powered by artificial intelligenc
 - How to implement a **debounce** pattern to optimize API usage
 - How to deploy a frontend project with environment variables on Vercel
 
-## 💡 Future improvements
+## 🔮 Future Improvements
+
 - Support for more languages
 - Dark mode UI
 - Automatic source language detection
 - Translation history
-
-## 🔗 Live Demo
-
-👉 [Linguist Pro](https://linguist-pro-kohl.vercel.app/)
-
-## 📸 Preview
-
-![App Preview](./img/preview-linguist-pro.gif)
 
 ## 🖥️ Local Setup
 
@@ -55,3 +48,11 @@ English to Spanish translation web application powered by artificial intelligenc
 4. Open `index.html` with Live Server
 
 > ⚠️ Never commit your API key to a public repository
+
+## 🔗 Live Demo
+
+👉 [Linguist Pro](https://linguist-pro-kohl.vercel.app/)
+
+## 📸 Preview
+
+![App Preview](./img/preview-linguist-pro.gif)
