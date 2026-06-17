@@ -8,7 +8,7 @@ English to Spanish translation web application powered by artificial intelligenc
 ![CSS](https://img.shields.io/badge/CSS-8A2BE2?logo=CSS&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=grey)
 ![API](https://img.shields.io/badge/API-grey)
-![Static Badge](https://img.shields.io/badge/IA-1572B6)
+![IA](https://img.shields.io/badge/IA-1572B6)
 
 ## 🚀 Features
 
